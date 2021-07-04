@@ -11,7 +11,7 @@ import collections
 from pprint import pprint
 
 
-excel_data = pandas.read_excel('wine3.xlsx', sheet_name='Лист1', keep_default_na=False, usecols=['Категория', 'Название', 'Сорт', 'Цена', 'Картинка', 'Акция'])
+excel_data = pandas.read_excel('wine.xlsx', sheet_name='Лист1', keep_default_na=False, usecols=['Категория', 'Название', 'Сорт', 'Цена', 'Картинка', 'Акция'])
 
 excel_data_dict = excel_data.to_dict(orient='record')
 
